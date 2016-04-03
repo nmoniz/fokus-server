@@ -1,0 +1,9 @@
+@(tasks: Seq[models.Task])
+
+@main("Tasks") {
+  <ul>
+    @tasks.map { t =>
+      <li>@t.id | @t.title</li>
+    }
+  </ul>
+}
